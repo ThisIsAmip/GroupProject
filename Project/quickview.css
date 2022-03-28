@@ -1,0 +1,158 @@
+
+/* Content quickview */
+
+.quickview {
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s all ease-in-out;
+    z-index: 3;
+}
+
+.quickview-wrapper {
+    z-index: 2;
+    width: 100%;
+    background: #fff;
+    margin: 0 10rem;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.quickview-details {
+    flex-direction: column;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.quickview-details-img {
+    max-width: 700px;
+}
+
+.quickview-details-info {
+    flex-direction: column;
+    max-width: 700px;
+    padding: 20px 0;
+}
+
+.quickview-info-items {
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.quickview-info-import {
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.quickview-details-img img {
+    width: 100%;
+}
+
+.quickview-info-tittle {
+    background: #f1f1f1;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.quickview-import-items {
+    border-bottom: 1px solid #f1f1f1;
+    padding: 10px;
+}
+
+span.import-content-left {
+    width: 40%;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.import-content-right {
+    width: 60%;
+    flex-direction: column;
+}
+
+.quickview-blur {
+    width: 100%;
+    position: absolute;
+    background: black;
+    height: 100%;
+    opacity: .8;
+}
+.import-content-right i {
+    color: gray;
+}
+.quickview-tittle {
+    text-transform: uppercase;
+    background: #f1f1f1;
+    padding: 20px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.quickview-close {
+    gap: 2px;
+    padding: 9px;
+    background: #fff;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 2;
+    border: 1px solid #e0e0e0;
+    float: revert;
+    line-height: 21px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.quickview.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Quickview ends */
+
+
+@media (max-width:900px) {
+    .quickview-close {
+        gap: 2px;
+        padding: 9px;
+        background: #fff;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        z-index: 4;
+        border: 1px solid #e0e0e0;
+        float: revert;
+        line-height: 21px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .quickview-details {
+        flex-direction: column;
+        margin: auto;
+        padding-top: 20px;
+    }
+    .quickview-wrapper {
+        z-index: 2;
+        width: 100%;
+        background: rgb(255, 255, 255);
+        margin: 0;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width:500px) {
+    .quickview-info-items {
+        flex-direction: column;
+        padding: 0px 0px;
+    }
+
+}
