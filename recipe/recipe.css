@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+div {
+  display: flex;
+}
+
+body {
+  background-color: #dbdbdb8c;
+}
+
+.recipe {
+  flex-direction: column;
+  width: 100%;
+}
+
+.main {
+  margin: 3.5em;
+  background-color: #ffffff;
+  padding: 2.5em;
+  border-radius: 13px;
+}
+
+.info-due-date p {
+  color: grey;
+  margin: 0;
+}
+
+.recipe-info {
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 2em;
+}
+
+.info-progress {
+  flex-direction: column;
+  margin-top: 0.5em;
+  width: 20%;
+  margin-left: 4em;
+}
+
+.info-due-date {
+  flex-direction: column;
+  justify-content: right;
+  margin-top: 0.5em;
+  text-align: right;
+}
+
+.info-order {
+  align-items: center;
+}
+
+.recipe-items {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressmy {
+  width: 100%;
+  height: 5px;
+  background-color: #c8c8c8;
+}
+
+.progressmy-bar {
+  width: 75%;
+  height: 5px;
+  background: linear-gradient(-62deg, #45476f, #6689ff);
+}
+
+.container-picture img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.container-picture {
+  width: 24%;
+}
+
+.container-info {
+  flex-direction: column;
+  margin-left: 0.5em;
+}
+
+.details {
+  width: 100%;
+  flex-direction: column;
+}
+
+.products {
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f2f2f266;
+  padding: 20px;
+  margin-left: 3em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+}
+
+.products-container {
+  margin-right: 0em;
+  flex-basis: 35%;
+  padding-left: 3em;
+}
+
+div#collapseExample {
+  width: 100%;
+}
+
+.total-sum {
+  flex-direction: column;
+}
+
+.total-sum-button button {
+  width: 7.3em;
+  height: 2.2em;
+  border: none;
+  background: linear-gradient(42deg, #373a80, #7190f7);
+  color: white;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.total-sum-button button:hover {
+  background: white;
+  color: black;
+  border: solid 1px;
+}
+
+.total-sum-info {
+  justify-content: right;
+}
+
+.total-sum-info span {
+  font-size: 20px;
+  margin-left: 2em;
+  padding-right: 1em;
+  color: crimson;
+}
+
+.total-sum-button {
+  justify-content: right;
+}
+
+.price-before {
+  margin-right: 1.5em;
+  color: red;
+}
+
+.price-after {
+  color: #b7b7b7;
+  text-decoration: line-through;
+  font-weight: 200;
+}
+
+.quantity-container span {
+  margin-left: 1em;
+  background-color: #ebebeb;
+  width: 30px;
+  height: 30px;
+  padding: 3px 12px;
+  border-radius: 20px;
+}
+
+.quantity-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.info-order h3 {
+  font-weight: 400;
+  font-size: 1.6em;
+}
+
+.info-progress h4 {
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.info-order h3 {
+  font-weight: 400;
+  font-size: 1.6em;
+}
+
+.info-progress h4 {
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.price-quantity {
+  flex-basis: 70%;
+}
+
+.products-price {
+  flex-basis: 35%;
+  justify-content: center;
+}
+
+.products-quantity {
+  flex-basis: 30%;
+  margin-left: 8em;
+}
+
+.btn-primary:hover {
+  color: #000;
+  background-color: #ffffff;
+  border-color: #0a58ca;
+}
+
+@media only screen and (max-width: 768px) {
+  .recipe-info {
+    flex-direction: column;
+  }
+
+  .info-progress {
+    flex-direction: column;
+    margin: 0.5em 0;
+  }
+
+  .info-due-date {
+    justify-content: left;
+    text-align: left;
+  }
+
+  .products {
+    flex-direction: column;
+  }
+
+  .products-container {
+    margin-right: 0em;
+    flex-basis: 100%;
+    padding: 0px;
+  }
+
+  .price-quantity {
+    font-size: 19px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main {
+    margin: 0;
+    padding: 0;
+  }
+
+  .info-progress {
+    width: 100%;
+  }
+
+  .products-quantity {
+    flex-basis: 100%;
+    margin-left: 0;
+    justify-content: right;
+  }
+
+  .products {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .price-quantity {
+    width: 100%;
+    font-size: 15px;
+    margin-top: 10px;
+    align-items: center;
+  }
+
+  .total-sum {
+    margin-bottom: 5em;
+    padding-right: 12px;
+
+  }
+}
